@@ -31,38 +31,6 @@
     (\autocite{#1}, ~\S {#1})
   }
 
-  % Theorem Environments
-  \theoremstyle{definition}
-  \newtheorem*{defn*}{Definition}
-  \theoremstyle{plain}
-  \newtheorem*{equ*}{Equation}
-
-  % Definitions for Algorithmic Environments
-  \algdef{SE}[VARIABLES]{GVariables}{EndGVariables}
-    {\algorithmicvariables}
-    {\algorithmicend\ \algorithmicvariables}
-  \algnewcommand{\algorithmicvariables}{\textbf{global variables}}
-  
-  \algdef{SE}[VARIABLES]{LVariables}{EndLVariables}
-    {\algorithmiclvariables}
-    {\algorithmicend\ \algorithmiclvariables}
-  \algnewcommand{\algorithmiclvariables}{\textit{local variables}}
-
-  \renewcommand{\algorithmicrequire}{\textbf{Input:}}
-  \renewcommand{\algorithmicensure}{\textbf{Output:}}
-  \renewcommand\thealgorithm{}
-
-  % Settings for math-mode
-  \makeatletter
-  \def\mathcolor#1#{\@mathcolor{#1}}
-  \def\@mathcolor#1#2#3{%
-    \protect\leavevmode
-    \begingroup
-      \color#1{#2}#3%
-    \endgroup
-  }
-  \makeatother
-
 
   % Image Directory
   \graphicspath{ {screenshots/} }
@@ -73,6 +41,7 @@
     linkcolor = blue,
     citecolor = blue
   }
+
   % Page and Text Layout
   \pagestyle{fancy}
   \geometry{%
@@ -83,25 +52,21 @@
     right=1in%
   }
   \setlength{\headheight}{15pt}
-
-  \newenvironment{ldefinitions}
-    {\left.\begin{aligned}}
-    {\end{aligned}\right\rbrace}
-
   \title{%
-    Unit 1 Discussion 1%
-    \large{The Myths of the Amoral Business}
+    Unit 1 Discussion 1\\%
+    \large{The Myth of the Amoral Business}
   }
   \author{Ashton Hellwig}
   \date{\today}
   \rhead{BUS205 Unit 1}
 
-  \begin{document}
-
+\begin{document}
   \maketitle
   
   \section{Initial Post}
-    \begin{quote}
+    \begin{mdframed}
+      \vspace{-10pt}
+      \subsection*{Prompt}
       \begin{enumerate}
         \item \textbf{Myth of the Amoral Business}: What is the ‘myth of amoral business’? What evidence is
         there to support the existence of the myth; what evidence is there that refutes this perspective as
@@ -110,7 +75,7 @@
           obligations of business, a corporation or the individuals involved in the world of business? Why or
           why not?
       \end{enumerate}
-    \end{quote}
+    \end{mdframed}
   
     \subsection{Myth of the Amoral Business}
       The \textit{Myth of the Amoral Business} is -- according to DeGeorge, the stance that
