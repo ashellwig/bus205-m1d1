@@ -1,0 +1,33 @@
+{
+    /* Language Specific Settings */
+    // LaTeX
+    "[latex]": {
+        "editor.formatOnSave": false,
+        "editor.tabSize": 2
+    },
+    "[bibtex]": {
+        "editor.formatOnSave": false,
+        "editor.tabSize": 2
+    },
+    // HTML
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features",
+        "editor.formatOnSave": true
+    },
+    "html.format.wrapLineLength": 80,
+    /* Global Editor Settings */
+    // Spell Checking,
+    "cSpell.diagnosticLevel": "Warning",
+    "cSpell.enabled": true,
+    "cSpell.enabledLanguageIds": [
+        "latex",
+        "markdown",
+        "plaintext",
+        "restructuredtext",
+        "text"
+    ],
+    "cSpell.words": [
+        "defn",
+        "mathcolor"
+    ]
+}
